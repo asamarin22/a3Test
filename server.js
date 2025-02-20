@@ -77,7 +77,7 @@ const users = new Map();
 passport.use(new GitHubStrategy({
         clientID: "Ov23lio74xNCdupaftD6",
         clientSecret: "1315f45edf57e382567c890fb526751ee4bd4fcd",
-        callbackURL: "http://localhost:3000/auth/github/callback"
+        callbackURL: "https://a3-asamarin22.glitch.me/auth/github/callback"
     },
     function(accessToken, refreshToken, profile, cb) {
         let user = users.get(profile.id);
